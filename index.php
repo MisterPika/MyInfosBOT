@@ -1,9 +1,7 @@
 <?php
 
-	$botToken = "662566623:AAH43hmdk6brrJtKUm6TDNkQCKXHtCnk9LI"; // In mezzo a "" scrivi il Token che ti ha dato @botfather
+	$botToken = ""; // In mezzo a "" scrivi il Token che ti ha dato @botfather
 	$website = "https://api.telegram.org/bot".$botToken; // Non toccare
-	
-	
 	$update = file_get_contents('php://input'); // Non toccare
 	$update = json_decode($update, TRUE); // Non toccare
 
