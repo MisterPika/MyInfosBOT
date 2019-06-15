@@ -4,7 +4,7 @@
 	$website = "https://api.telegram.org/bot".$botToken; // Non toccare
 	
 	
-	$update = file_get_contents('php://input'); // Non toccare
+	$update = fopen($url, "r"); // Non toccare
 	$update = json_decode($update, TRUE); // Non toccare
 
 	$chatId = $update['message']['chat']['id']; // Non toccare
